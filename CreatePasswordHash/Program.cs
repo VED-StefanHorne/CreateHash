@@ -8,6 +8,18 @@ namespace CreatePasswordHash
     {
         static void Main(string[] args)
         {
+            if (args[0].ToString().ToLower() == "h")
+            {
+                DisplayHelp();
+                return;
+            }
+
+            if (args[0].ToString().ToLower() == "md5")
+            {
+                Console.WriteLine(GetMd5Hash(args[1]));
+                return;
+            }
+
             Console.WriteLine(CreatePasswordHash(args[0]));
         }
 
@@ -32,6 +44,14 @@ namespace CreatePasswordHash
 
                 return sBuilder.ToString();
             }
+        }
+
+        public static void DisplayHelp()
+        {
+            Console.WriteLine("\n");
+            Console.WriteLine("Usage:\n");
+            Console.WriteLine("Use flag 'md5' for MD5 hash. e.g. CreatePasswordHash md5 Testing123");
+            Console.WriteLine("No flag for default (MD5 -> PBKDF2). e.g. CreatePasswordHash Testing123");
         }
     }
 }
