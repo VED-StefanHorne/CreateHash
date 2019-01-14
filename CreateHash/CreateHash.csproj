@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{57AB5045-C08F-4AE2-920F-5107163A5D05}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CreatePasswordHash</RootNamespace>
-    <AssemblyName>CreatePasswordHash</AssemblyName>
+    <RootNamespace>CreateHash</RootNamespace>
+    <AssemblyName>CreateHash</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
